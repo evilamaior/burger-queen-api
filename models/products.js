@@ -8,11 +8,5 @@ module.exports = (sequelize, DataTypes) => {
     Products.hasMany(models.OrderProducts, {foreignKey: "productID"})
   };
 
-  // sequelize.sync(
-  //   // Products.create({
-  //   //   name: "Café americano",
-  //   //   price: 5
-  //   // }),
-  // )
   return Products;
 };

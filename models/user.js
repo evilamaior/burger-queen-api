@@ -7,10 +7,5 @@ module.exports = (sequelize, DataTypes) => {
     User.hasMany(models.Orders, {foreignKey: "userid"}) 
   };
 
-  // sequelize.sync(
-  //   // User.create({
-  //   //   // email: "fanie@mail.com"
-  //   // })
-  // )
   return User;
 };

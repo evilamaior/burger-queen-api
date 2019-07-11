@@ -12,4 +12,6 @@ app.use("/products", require("./routes/products"));
 
 app.use("/orders", require("./routes/orders"));
 
+app.use("/orderproducts", require("./routes/orderproducts"));
+
 db.sequelize.sync();

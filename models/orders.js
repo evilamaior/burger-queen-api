@@ -9,11 +9,5 @@ module.exports = (sequelize, DataTypes) => {
     Orders.hasMany(models.OrderProducts, {foreignKey: "orderID"})
   };
 
-  // sequelize.sync(
-  //   Orders.create({
-  //     status: "fazendo",
-  //     userid: 1
-  //   })
-  // )
   return Orders;
 };

@@ -9,11 +9,5 @@ module.exports = (sequelize, DataTypes) => {
     OrderProducts.belongsTo(models.Products, {foreignKey: "productID"})
   };
 
-  // sequelize.sync(
-  //   OrderProducts.create({
-  //     orderID: 1,
-  //     productID: 1
-  //   })
-  // )
   return OrderProducts;
 };
