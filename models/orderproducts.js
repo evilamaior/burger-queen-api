@@ -5,9 +5,8 @@ module.exports = (sequelize, DataTypes) => {
     productID: DataTypes.INTEGER
   }, {});
   OrderProducts.associate = function(models) {
-    OrderProducts.belongsTo(models.Orders, {foreignKey: "orderID"}),
-    OrderProducts.belongsTo(models.Products, {foreignKey: "productID"})
+    OrderProducts.belongsTo(models.Orders, {foreignKey: 'orderID'}),
+    OrderProducts.belongsTo(models.Products, {foreignKey: 'productID'});
   };
-
   return OrderProducts;
 };

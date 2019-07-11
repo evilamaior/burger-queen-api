@@ -4,8 +4,7 @@ module.exports = (sequelize, DataTypes) => {
     email: DataTypes.STRING
   }, {});
   User.associate = function(models) {
-    User.hasMany(models.Orders, {foreignKey: "userid"}) 
+    User.hasMany(models.Orders, {foreignKey: 'userid'}); 
   };
-
   return User;
 };
