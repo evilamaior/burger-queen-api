@@ -12,24 +12,39 @@ Para completar o projeto, é necessário estar familiarizado com conceitos como 
 Segundo a documentação, a API deve conter os seguintes endpoints:
 
 > **/users**
+>
 > GET /users
+>
 > GET /users/:uid
+>
 > POST /users
+>
 > PUT /users/:uid
+>
 > DELETE /users/:uid
 
 > **/products**
+>
 > GET /products
+>
 > GET /products/:productid
+>
 > POST /products
+>
 > PUT /products/:productid
+>
 > DELETE /products/:productid
 
 > **/orders**
+>
 > GET /orders
+>
 > GET /orders/:orderid
+>
 > POST /orders
+>
 > PUT /orders/:orderid
+>
 > DELETE /orders/:orderid
 
 ![burger-queen](burgerqueen.png)
